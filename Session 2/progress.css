@@ -1,0 +1,101 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+  color: white;
+  font-family: "Times New Roman";
+}
+
+nav {
+  position: fixed;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+}
+
+nav .navbar {
+  text-align: right;
+}
+
+.logo {
+  margin: -10px 10px;
+  height: 40px;
+  position: fixed;
+}
+
+.navbar li {
+  display: inline;
+  padding-right: 30px;
+  margin: 0 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar li a:hover {
+  transition: 0.8s;
+  color: rgb(151, 151, 151);
+}
+
+.buy {
+  background-color: #742929;
+  padding: 8px 23px;
+  border-radius: 5px;
+}
+
+#home {
+  background-image: url(./Assets/wallpaper.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title {
+  width: fit-content;
+  padding-top: 40vh;
+  margin: auto;
+  font-size: 7vw;
+}
+
+.subtitle {
+  font-size: 1.6vw;
+  margin: 6vh 10vw;
+}
+
+#story {
+  height: 100vh;
+  background-color: rgb(12, 12, 12);
+}
+
+.heading1 {
+  padding: 10vh 0 5vh 5vw;
+  font-size: 5vh;
+}
+
+video {
+  width: 80vh;
+  background-color: aliceblue;
+  display: block;
+  margin: auto;
+}
+
+.summary {
+  margin: 6vh 10vw;
+  padding-right: 30vw;
+  font-size: 2.3vh;
+}
+
+#characters {
+  height: 100vh;
+  background-color: rgb(12, 12, 12);
+}
+
+#buy {
+  height: 100vh;
+  background-color: rgb(12, 12, 12);
+}

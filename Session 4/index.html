@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 4</title>
+</head>
+<body>
+    <div id="root" Lycia="true">0</div>
+
+    <div class="blue"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+
+    <button id="btn">Click <Menu></Menu></button>
+
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <button id="addBtn">Add</button>
+    <button onclick="logging">Logging</button>
+
+    <script defer>
+        const object = {name: "hello"};
+        console.log(object.name);
+        const rootDiv = document.getElementById("root");
+        const blueClass = document.getElementsByClassName("blue");
+
+        for(let i = 0; i < 5; i++) {
+            blueClass[i].innerHTML = "hello";
+        };
+
+        setInterval(() => {
+            console.count();
+            rootDiv.innerHTML = parseInt(rootDiv.innedHTML) + 1;
+        }, 1000);
+
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", (event) => {
+            console.log(event);
+            rootDiv.innerHTML = 0;
+        });
+
+        const aField = document.getElementById("a");
+        const bField = document.getElementById("b");
+
+        const add = (a, b) => {
+            return a + b;
+        };
+
+        addBtn.addEventListener("mouseenter", () => {
+            const {valueAsNumber: a} = aField;
+            const {valueAsNumber: b} = bField;
+            rootDiv.innerHTML = add(a,b);
+        });
+
+        const logging = (log) => {
+            console.log("%cHello World", "font-size: 60px; color: #256fee")
+            console.log(log);
+        };
+    </script>
+</body>
+</html>

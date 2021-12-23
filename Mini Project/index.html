@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Sky Pics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <a href="./index.html"><img class="logo" src="./Assets/logo.png" alt="Sky Pics"></a>
+
+    <section id="home">
+        <div class="homeEX">
+            <h1 class="title">Sky Pics</h1>
+            <p class="subtitle">The sky's the limit</p>
+            <ul class="arrow">
+                <li>
+                    <a href="#about"><img class="arrowIMG" src="./Assets/arrow.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="aboutText">
+            <h1>About Us</h1>
+            <img src="./Assets/aboutIcon.png" alt="Sky Pics">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare sagittis, pharetra, interdum dui, donec volutpat augue. Id aliquam, laoreet cursus aliquam.</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h1>Our Work</h1>
+            <div class="image-container">
+                <img
+                  class="inner-image"
+                  src="./Assets/workLeft.jfif"
+                  alt="Lembah"
+                />
+                <div class="inner-image-container">
+                  <div class="image-pipih-top"></div>
+                  <div class="image-pipih-bottom"></div>
+                </div>
+                <img
+                  class="inner-image"
+                  src="./Assets/workRight.jfif"
+                  alt="Lembah"
+                />
+              </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form class="SPform" method="post" onsubmit="return nameValidation()">
+            <div class="inline-box1">
+                <input class="name" name="nameForm" type="text" id="firstName" placeholder="First Name">
+                <input class="name" name="nameForm" type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <input type="text" id="email" placeholder="Email">
+            
+            <div class="inline-box2">
+                <input class="pnumber" type="number" id="phoneNumber" placeholder="Phone Number" min="10" max="12">
+                <input class="gender" type="radio" name="gender" id="male" value="male">
+                <label class="gender" for="male">Male</label>
+                
+                <input class="gender" type="radio" name="gender" id="female" value="female">
+                <label class="gender" for="female">Female</label>
+            </div>
+
+            <textarea name="" id="message" cols="10" rows="6" placeholder="Message"></textarea>
+            <input class="submit" id="submit" type="submit" value="Submit" onclick="numberValidation">
+        </form>
+    </section>
+
+    <footer>
+        <div class="leftFooter">
+            <p class="leftText">Designed and Managed by:</p>
+            <div class="leftContent">
+                <img src="./Assets/logo.png" alt="Sky Pics">
+            </div>
+        </div>
+
+        <div class="rightFooter">
+            <p class="rightText">Reach us at:</p>
+            <div >
+                <div class="rightContent">
+                    <a href="mailto:aurelliagita01@gmail.com">
+                        <img src="./Assets/footerMail.png" alt="mail">
+                    </a>
+                </div>
+                <div class="rightContent">
+                    <a href="www.linkedin.com/in/aurellia-gita-elysia">
+                        <img src="./Assets/footerIn.png" alt="">
+                    </a>
+                </div>
+                <div class="rightContent">
+                    <a href="https://api.whatsapp.com/send/?phone=6281281157073&text&app_absent=0">
+                        <img src="./Assets/footerWA.png" alt="">
+                    </a>
+                </div>
+                <div class="rightContent">
+                    <a href="https://www.instagram.com/aurellialycia/">
+                        <img src="./Assets/footerIG.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div><br><br>
+
+        <p>©2021 SkyPics, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function nameValidation() {
+            let x = document.forms["SPform"]["nameForm"].value;
+            if (x == "") {
+                alert("Must be filled out!");
+                return false;
+            }
+        }
+
+        function numberValidation() {
+            let x = document.getElementById("phoneNumber").value;
+            let text;
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Must be in numbers";
+            } else {
+                text = "Number verified"
+            }
+            document.getElementById("numberValid").innerHTML = text;
+
+            var y = document.getElementById("phoneNumber").max;
+            
+        }
+    </script>
+
+</body>
+</html>

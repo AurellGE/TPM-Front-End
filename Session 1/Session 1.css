@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #1e90ff;
+  --secondary-color: #4e4e4e;
+  --red: #fff1ff;
+}
+
+/*
+margin: top left bottom right
+margin: top-bottom left-right
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.inputgroup {
+  background-color: var(--red);
+  color: cornsilk;
+}
+
+/* Selector bisa menggunakan panah (>) atau spasi ( )
+Bila menggunakan spasi, seluruh cucu dari div class akan terpengaruh
+Bila menggunakan panah, hanya direct children yang terpengaruh */
+.inputgroup > div > input {
+  padding: 5px;
+}
+
+.submit-botton {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.pic1 {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.pic2 {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.image {
+  width: 100vw;
+}
+
+/* position : static, fixed, relative, sticky, absolute
+1. static   : tidak bisa menggunakan top, right, bottom, left
+2. relative : mirip dengan static, tapi bisa menggunakan top, right, bottom, left. Namun tempat awal tidak bisa ditempati elemen lain
+3. fixed    : posisi tidak akan pindah walaupun scroll page
+4. sticky   : posisi akan selalu berada di tempat yang ditentukan
+5. absolute : posisi tidak akan berubah, namun tempat awal bisa dihinggapi elemen lain */
+
+.circle {
+  position: absolute;
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* Gradient
+background: linear-gradient(red,blue)
+color: rgba (red, green, blue, alpha(opacity))
+ */
+
+/* Filter: opacity, grayscale, blur, contrast, saturate
+ *for opacity, you can directly type opacity without filter
+  */

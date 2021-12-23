@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPM FE-2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        @keyframes muter {
+            0% {transform:rotate(0deg)};
+            25%{transform: rotate(90deg)};
+            75% {transform: rotate(100deg)};
+        }
+
+
+        h1 {
+            font-family: poppins;
+        }
+
+        div {
+            /* width: 500px;
+            height: 500px; */
+            background-color: coral;
+        }
+
+        .display {
+        /* Display
+        * span: width height tidak bisa diubah
+        * div : width height bisa diubah
+        
+        1. block
+        2. inline
+        3. inline-block
+        4. flex
+
+        */
+        }
+
+        .flex {
+            width: 500px;
+            height: 500px;
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .clive {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kaeya {
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .transform {
+            transform: translate(50px, 30px);
+            animation: muter 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Session 2</h1>
+    <i class="fa fa-address-book" aria-hidden="true"></i>
+
+    <div style="display: block; background-color: darkkhaki;">Aurellia Gita Elysia</div>
+    <div style="display: block; background-color: darkkhaki;">Aurellia Gita Elysia</div>
+    
+    <span style="background-color: tomato;">Aurell</span>
+    <span style="background-color: tomato;">Aurell</span>
+
+    <div class="transform">
+        TRANSFORM THIS
+    </div>
+
+
+    <div class="flex">
+        <div class="clive">Clive</div>
+        <div class="kaeya">Kaeya Alberich</div>
+        <div class="noctis">Noctis Lucis Caelum</div>
+    </div>
+
+</body>
+</html>

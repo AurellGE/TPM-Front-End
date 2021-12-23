@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shy Pics</title>
+    <link rel="stylesheet" href="./shypics.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .work {
+        background-color: bisque;
+        min-height: 100vh;
+        padding: 3rem;
+    }
+
+    .work > .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    .image-container {
+        display: flex;
+    }
+
+    .inner-image-container {
+        width: 30%;
+    }
+
+    .inner-image-container > img {
+        width: 100%;
+    }
+
+    .inner-image {
+        width: 30%;
+    }
+
+    .image-pipih {
+        min-height: 150px;
+        height: 50%;
+        background-image: url(https://images.unsplash.com/photo-1485249245068-d8dc50b77cc7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80);
+        background-size: cover;
+    }
+
+    h1 {
+        color: salmon;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .work {
+
+        }
+    }
+</style>
+<body>
+    <section class="work">
+        <div class="container">
+            <h1>Our Work</h1>
+            <div class="image-container">
+                <img class="inner-image" src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="">
+            
+                <div class="inner-image-container">
+                    <div style="height: 50%;" class="image-pipih">
+                        <!-- <img style="height: 50%;" src="https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt=""> -->
+                    </div>
+                    <div>
+                        <!-- <img style="width: 100%" src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt=""> -->
+                    </div>
+                </div>
+                
+                <img class="inner-image" src="https://images.unsplash.com/photo-1617634667039-8e4cb277ab46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=368&q=80" alt="lembah">
+            </div>
+                
+        </div>
+        
+    </section>
+
+    <script>
+        // JSON
+        // var, let, const
+        // const: nilai tidak bisa diubah
+        // var  : 
+        // let  : 
+
+        var nama = "Leecee";
+        let pet = "wolf";
+        const APP_NAME = "TPM Session 3";
+        const angka = 1;
+        nama = "Lycia";
+        // angka = 2; tidak bisa dimasukkan dalam js, karena akan menimbulkan error
+        console.log(nama);
+
+        console.log(add(5,10));
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        const addArrow = (a, b) => {
+            return a + b;
+        }
+
+        console.log(addArrow);
+        console.log(addArrow(1, 9));
+
+        const array = [1, 7, 3, 5, 9];
+
+        array.forEach((number) => {
+            console.log(number);
+        });
+
+        console.log(array.map((number) => {
+            return number + 1;
+            })
+        );
+
+        console.log(
+            array.filter((number) => {
+                return number > 3;
+            })
+        );
+
+        console.log(array.reduce((acc, number) => {
+            return acc + number;
+            })
+        );
+
+        </script>
+
+</body>
+</html>
